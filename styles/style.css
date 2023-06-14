@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: 'Righteous', cursive;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 13rem;
+
+    min-height: 100vh;
+    background-color: #A625DA;
+}
+
+.image{
+    padding-left: 50px;
+    object-fit: cover;
+}
+
+.loading{
+    width: 65px;
+    height: 65px;
+    background-color: transparent;
+    display: block;
+    border: 10px solid #fff;
+    border-top: 10px solid transparent;
+    border-radius: 50%;
+
+    animation: loading 1s linear infinite;
+}
+
+@keyframes loading {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 1024px) {
+    .container{
+        gap: 10rem;
+    }
+    
+    .image img{
+        width: 272px;
+        height: 350px;
+    }
+
+    .loading{
+        border: 8px solid #fff;
+        border-top: 8px solid transparent;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container{
+        gap: 8rem;
+    }
+    
+    .image img{
+        width: 252px;
+        height: 330px;
+    }
+
+    .loading{
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media (max-width: 425px) {
+    .container{
+        gap: 8rem;
+    }
+    
+    .image{
+        padding-left: 40px;
+        object-fit: cover;
+    }
+
+    .image img{
+        width: 232px;
+        height: 310px;
+    }
+
+    .loading{
+        border: 6px solid #fff;
+        border-top: 6px solid transparent;
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 375px) {
+    .container{
+        gap: 7rem;
+    }
+    
+    .image img{
+        width: 212px;
+        height: 290px;
+    }
+
+    .loading{
+        border: 5px solid #fff;
+        border-top: 5px solid transparent;
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 320px) {
+    .container{
+        gap: 5rem;
+    }
+    
+    .image img{
+        width: 202px;
+        height: 270px;
+    }
+
+    .loading{
+        border: 5px solid #fff;
+        border-top: 5px solid transparent;
+        width: 30px;
+        height: 30px;
+    }
+}

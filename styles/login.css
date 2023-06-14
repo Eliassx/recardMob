@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    color: black;
+    font-family: 'Righteous', cursive;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20rem;
+}
+
+.div-img{
+    display: flex;
+    background-color: #f9f9f9;
+}
+
+img{
+    height: 230px;
+    object-fit: cover;
+}
+
+.div-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+
+    background-color: #F5F1F1;
+    border: none;
+    border-radius: 10px;
+    height: 700px;
+    width: 500px;
+}
+
+.div-form h2{
+    font-size: 70px;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+
+    width: 70%;
+}
+
+.name, .email, .password, .confirmPassword{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+
+input{
+    height: 35px;
+    width: 100%;
+    border: none;
+    border-radius: 7px;
+
+    padding: 1rem;
+}
+
+.form-button button{
+    height: 50px;
+    width: 270px;
+
+    border: none;
+    border-radius: 8px;
+    background-color: #2599DA;
+    color: #fff;
+
+    font-family: 'Righteous', cursive;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#obs{
+    padding-top: 0.2rem;
+    font-size: 13px;
+    color: red;
+}
+
+@media (max-width: 1440px) {
+    .content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15rem;
+    }
+    
+    .div-img{
+        display: flex;
+        background-color: #f9f9f9;
+    }
+    
+    img{
+        height: 175px;
+    }
+    
+    .div-form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    
+        background-color: #F5F1F1;
+        border: none;
+        border-radius: 10px;
+        height: 600px;
+        width: 430px;
+    }
+    
+    .div-form h2{
+        font-size: 60px;
+    }
+    
+    .login{
+        display: flex;
+        flex-direction: column;
+        gap: 2.4rem;
+    
+        width: 70%;
+        font-size: 15px;
+    }
+    
+    .name, .email, .password, .confirmPassword{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    
+    input{
+        height: 35px;
+        width: 100%;
+        padding: 1rem;
+
+        border: none;
+        border-radius: 7px;
+    
+    }
+    
+    .form-button button{
+        height: 50px;
+        width: 270px;
+    
+        border: none;
+        border-radius: 8px;
+        background-color: #2599DA;
+        color: #fff;
+    
+        font-family: 'Righteous', cursive;
+        font-size: 22px;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 1024px) {
+    .content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15rem;
+    }
+    
+    .div-img{
+        display: flex;
+        background-color: #f9f9f9;
+    }
+    
+    img{
+        height: 130px;
+    }
+    
+    .div-form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    
+        background-color: #F5F1F1;
+        border: none;
+        border-radius: 10px;
+        height: 530px;
+        width: 360px;
+    }
+    
+    .div-form h2{
+        font-size: 45px;
+    }
+    
+    .login{
+        display: flex;
+        flex-direction: column;
+        gap: 2.4rem;
+    
+        width: 70%;
+        font-size: 13px;
+    }
+    
+    .name, .email, .password, .confirmPassword{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    
+    input{
+        height: 35px;
+        width: 100%;
+        padding: 1rem;
+
+        border: none;
+        border-radius: 7px;
+    
+    }
+    
+    .form-button button{
+        height: 45px;
+        width: 270px;
+    
+        border: none;
+        border-radius: 8px;
+        background-color: #2599DA;
+        color: #fff;
+    
+        font-family: 'Righteous', cursive;
+        font-size: 20px;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 768px) {
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0rem;
+    }
+    
+    .div-img{
+        display: flex;
+        background-color: #f9f9f9;
+    }
+    
+    img{
+        display: none;
+    }
+    
+    .div-form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    
+        background-color: #F5F1F1;
+        border: none;
+        border-radius: 10px;
+        height: 480px;
+        width: 360px;
+    }
+    
+    .div-form h2{
+        font-size: 45px;
+    }
+    
+    .login{
+        display: flex;
+        flex-direction: column;
+        gap: 2.4rem;
+    
+        width: 70%;
+        font-size: 13px;
+    }
+    
+    .name, .email, .password, .confirmPassword{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    
+    input{
+        height: 35px;
+        width: 100%;
+        padding: 1rem;
+
+        border: none;
+        border-radius: 7px;
+    
+    }
+    
+    .form-button button{
+        height: 45px;
+        width: 250px;
+    
+        border: none;
+        border-radius: 8px;
+        background-color: #2599DA;
+        color: #fff;
+    
+        font-family: 'Righteous', cursive;
+        font-size: 19px;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 375px) {
+    .content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0rem;
+    }
+    
+    .div-img{
+        display: flex;
+        background-color: #f9f9f9;
+    }
+    
+    img{
+        display: none;
+    }
+    
+    .div-form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    
+        background-color: #F5F1F1;
+        border: none;
+        border-radius: 10px;
+        height: 530px;
+        width: 330px;
+    }
+    
+    .div-form h2{
+        font-size: 40px;
+    }
+    
+    .login{
+        display: flex;
+        flex-direction: column;
+        gap: 2.4rem;
+    
+        width: 70%;
+        font-size: 14px;
+    }
+    
+    .name, .email, .password, .confirmPassword{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    
+    input{
+        height: 35px;
+        width: 100%;
+        padding: 1rem;
+
+        border: none;
+        border-radius: 7px;
+    
+    }
+    
+    .form-button button{
+        height: 45px;
+        width: 240px;
+    
+        border: none;
+        border-radius: 8px;
+        background-color: #2599DA;
+        color: #fff;
+    
+        font-family: 'Righteous', cursive;
+        font-size: 20px;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 320px) {
+    .content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0rem;
+    }
+    
+    .div-img{
+        display: flex;
+        background-color: #f9f9f9;
+    }
+    
+    img{
+        display: none;
+    }
+    
+    .div-form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    
+        background-color: #F5F1F1;
+        border: none;
+        border-radius: 10px;
+        height: 530px;
+        width: 300px;
+    }
+    
+    .div-form h2{
+        font-size: 37px;
+    }
+    
+    .login{
+        display: flex;
+        flex-direction: column;
+        gap: 2.4rem;
+    
+        width: 70%;
+        font-size: 12px;
+    }
+    
+    .name, .email, .password, .confirmPassword{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    
+    input{
+        height: 35px;
+        width: 100%;
+        padding: 1rem;
+
+        border: none;
+        border-radius: 7px;
+    
+    }
+    
+    .form-button button{
+        height: 45px;
+        width: 210px;
+    
+        border: none;
+        border-radius: 8px;
+        background-color: #2599DA;
+        color: #fff;
+    
+        font-family: 'Righteous', cursive;
+        font-size: 20px;
+        cursor: pointer;
+    }
+}

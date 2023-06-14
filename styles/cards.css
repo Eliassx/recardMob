@@ -1,0 +1,731 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Righteous', cursive;
+}
+header h1{
+    color: rgb(117, 117, 117);
+    font-size: 40px;
+    font-weight: 200;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    align-items: center;
+}
+header img{
+    width: 75px;
+    height: 75px;
+}
+.linha{
+    height: 3px;
+    background-color: #A625DA;
+}
+.caixa-linha{
+    display: flex;
+    justify-content: center;
+}
+.linha2{
+    height: 2px;
+    background-color: #A625DA60;
+    width: 96%;
+}
+.nav-cartoes{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+.cartao-todos{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    gap: 10px;
+}
+.cartao-todos img{
+    width: 75px;
+}
+.cartoes{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    gap: 10px;
+}
+.cartoes img{
+    width: 75px;
+}
+.cartoes-passagens{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    gap: 10px;
+}
+.cartoes-passagens img{
+    width: 75px;
+}
+#cartoes-cadastrados{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: flex-end;
+    width: 10%;
+    padding-top: 50px;
+}
+.nav-cartoes-cadastrados{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+    left: 234px;
+}
+#cartoes-cadastrados img{
+    width: 70px;
+}
+.info-cartoes{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 200px;
+}
+.cadastro{
+    display: flex;
+    width: 99%;
+    justify-content: flex-end;
+    align-items: center;
+    color: #a725da90;
+    padding: 15PX;
+}
+.cadastro img{
+    width: 50px;
+}
+.recarregar{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.recarga{
+    color: rgb(117, 117, 117);
+    font-size: 35px;
+    font-weight: 100;
+}
+.valor{
+    color: #A3A3A3;
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+}
+.selecionar-cartao{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    color: #5F25DA75;
+    padding: 40px;
+    gap: 30px;
+}
+.selecionar-cartao img{
+    width: 50px;
+}
+.div-selecionar-cartao{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+section .final{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+}
+.selecionar-pagamento{
+    display: flex;
+    gap: 2rem;
+}
+.linha-vertical{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.linha-vertical hr{
+    height: 250px;
+    width: 2px;
+    background-color: #A625DA;
+}
+.cartoes-sp{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.escolher-cartao{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.escolher-cartao img{
+    width: 50px;
+}
+.pix{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.pix img{
+    width: 50px;
+}
+.boleto{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.boleto img{
+    width: 45px;
+}
+
+@media (max-width: 600px) {
+    header h1{
+        color: rgb(117, 117, 117);
+        font-size: 30px;
+        font-weight: 200;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+        align-items: center;
+        width: 100%;
+    }
+    header img{
+        width: 55px;
+        height: 55px;
+    }
+    .linha{
+        height: 3px;
+        background-color: #A625DA;
+        width: 100%;
+    }
+    .caixa-linha{
+        display: flex;
+        justify-content: center;
+    }
+    .linha2{
+        height: 2px;
+        background-color: #A625DA60;
+        width: 96%;
+    }
+    .nav-cartoes{
+        display: flex;
+        justify-content: space-between;
+        padding: 25px;
+    }
+    .cartao-todos{
+        display: flex;
+        align-items: center;
+        font-size: 25px;
+        gap: 10px;
+    }
+    .cartao-todos img{
+        width: 75px;
+    }
+    .cartoes{
+        display: flex;
+        align-items: center;
+        font-size: 25px;
+        gap: 10px;
+    }
+    .cartoes img{
+        width: 75px;
+    }
+    .cartoes-passagens{
+        display: flex;
+        align-items: center;
+        font-size: 25px;
+        gap: 10px;
+    }
+    .cartoes-passagens img{
+        width: 75px;
+    }
+    #cartoes-cadastrados{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+        padding-top: 50px;
+    }
+    .nav-cartoes-cadastrados{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        position: relative;
+        left: 150px;
+    }
+    #cartoes-cadastrados img{
+        width: 70px;
+    }
+    .info-cartoes{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 200px;
+    }
+    .cadastro{
+        display: flex;
+        width: 99%;
+        justify-content: flex-end;
+        align-items: center;
+        color: #a725da90;
+        padding: 15PX;
+    }
+    .cadastro img{
+        width: 50px;
+    }
+    .recarregar{
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    .recarga{
+        color: rgb(117, 117, 117);
+        font-size: 35px;
+        font-weight: 100;
+    }
+    .valor{
+        color: #A3A3A3;
+        font-family: 'Roboto', sans-serif;
+        font-size: 35px;
+        padding-left: 60px;
+    }
+    .selecionar-cartao{
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        color: #5F25DA75;
+        padding: 20px;
+        gap: 30px;
+    }
+    .selecionar-cartao img{
+        width: 50px;
+    }
+    .div-selecionar-cartao{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    section .final{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 1rem;
+    }
+    .selecionar-pagamento{
+        display: flex;
+        gap: 2rem;
+    }
+    .linha-vertical{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .linha-vertical hr{
+        height: 250px;
+        width: 2px;
+        background-color: #A625DA;
+    }
+    .cartoes-sp{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .escolher-cartao{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+    .escolher-cartao img{
+        width: 50px;
+    }
+    .pix{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+    .pix img{
+        width: 50px;
+    }
+    .boleto{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+    .boleto img{
+        width: 45px;
+    }
+}
+
+@media (max-width: 600px) {
+    header h1{
+        color: rgb(117, 117, 117);
+        font-size: 30px;
+        font-weight: 200;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+        align-items: center;
+        width: 100%;
+    }
+    header img{
+        width: 55px;
+        height: 55px;
+    }
+    .linha{
+        height: 3px;
+        background-color: #A625DA;
+        width: 100%;
+    }
+    .caixa-linha{
+        display: flex;
+        justify-content: center;
+    }
+    .linha2{
+        height: 2px;
+        background-color: #A625DA60;
+        width: 96%;
+    }
+    .nav-cartoes{
+        display: flex;
+        justify-content: space-between;
+        padding: 25px;
+    }
+    .cartao-todos{
+        display: flex;
+        align-items: center;
+        font-size: 25px;
+        gap: 10px;
+    }
+    .cartao-todos img{
+        width: 75px;
+    }
+    .cartoes{
+        display: flex;
+        align-items: center;
+        font-size: 25px;
+        gap: 10px;
+    }
+    .cartoes img{
+        width: 75px;
+    }
+    .cartoes-passagens{
+        display: flex;
+        align-items: center;
+        font-size: 25px;
+        gap: 10px;
+    }
+    .cartoes-passagens img{
+        width: 75px;
+    }
+    #cartoes-cadastrados{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+        padding-top: 50px;
+    }
+    .nav-cartoes-cadastrados{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        position: relative;
+        left: 150px;
+        font-size: 13px;
+    }
+    #cartoes-cadastrados img{
+        width: 50px;
+    }
+    .info-cartoes{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 200px;
+    }
+    .cadastro{
+        display: flex;
+        width: 99%;
+        justify-content: flex-end;
+        align-items: center;
+        color: #a725da90;
+        padding: 15px;
+    }
+    .cadastro img{
+        width: 27px;
+    }
+    .recarregar{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    .recarga{
+        color: rgb(117, 117, 117);
+        font-size: 30px;
+        font-weight: 100;
+    }
+    .valor{
+        color: #A3A3A3;
+        font-family: 'Roboto', sans-serif;
+        font-size: 28px;
+    }
+    .selecionar-cartao{
+        display: flex;
+        flex-direction: column;
+        font-size: 15px;
+        color: #5F25DA75;
+        padding: 20px;
+        gap: 30px;
+    }
+    .selecionar-cartao img{
+        width: 40px;
+    }
+    .div-selecionar-cartao{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    section .final{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 1rem;
+    }
+    .selecionar-pagamento{
+        display: flex;
+        gap: 2rem;
+        font-size: 15px;
+    }
+    .linha-vertical{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .linha-vertical hr{
+        height: 250px;
+        width: 2px;
+        background-color: #A625DA;
+    }
+    .cartoes-sp{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .escolher-cartao{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+    .escolher-cartao img{
+        width: 40px;
+    }
+    .pix{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+    .pix img{
+        width: 40px;
+    }
+    .boleto{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+    .boleto img{
+        width: 35px;
+    }
+}
+
+@media (max-width: 320px) {
+    header h1{
+        color: rgb(117, 117, 117);
+        font-size: 30px;
+        font-weight: 200;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+        align-items: center;
+        width: 100%;
+    }
+    header img{
+        width: 55px;
+        height: 55px;
+    }
+    .linha{
+        height: 3px;
+        background-color: #A625DA;
+        width: 100%;
+    }
+    .caixa-linha{
+        display: flex;
+        justify-content: center;
+    }
+    .linha2{
+        height: 2px;
+        background-color: #A625DA60;
+        width: 96%;
+    }
+    .nav-cartoes{
+        display: flex;
+        justify-content: space-between;
+        padding: 25px;
+    }
+    .cartao-todos{
+        display: flex;
+        align-items: center;
+        font-size: 25px;
+        gap: 10px;
+    }
+    .cartao-todos img{
+        width: 75px;
+    }
+    .cartoes{
+        display: flex;
+        align-items: center;
+        font-size: 25px;
+        gap: 10px;
+    }
+    .cartoes img{
+        width: 75px;
+    }
+    .cartoes-passagens{
+        display: flex;
+        align-items: center;
+        font-size: 25px;
+        gap: 10px;
+    }
+    .cartoes-passagens img{
+        width: 75px;
+    }
+    #cartoes-cadastrados{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+        padding-top: 50px;
+    }
+    .nav-cartoes-cadastrados{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        position: relative;
+        left: 150px;
+        font-size: 13px;
+    }
+    #cartoes-cadastrados img{
+        width: 50px;
+    }
+    .info-cartoes{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 200px;
+    }
+    .cadastro{
+        display: flex;
+        width: 99%;
+        justify-content: flex-end;
+        align-items: center;
+        color: #a725da90;
+        padding: 15px;
+    }
+    .cadastro img{
+        width: 27px;
+    }
+    .recarregar{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    .recarga{
+        color: rgb(117, 117, 117);
+        font-size: 30px;
+        font-weight: 100;
+    }
+    .valor{
+        color: #A3A3A3;
+        font-family: 'Roboto', sans-serif;
+        font-size: 28px;
+    }
+    .selecionar-cartao{
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        color: #5F25DA75;
+        padding: 20px;
+        gap: 30px;
+    }
+    .selecionar-cartao img{
+        width: 30px;
+    }
+    .div-selecionar-cartao{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    section .final{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 1rem;
+    }
+    .selecionar-pagamento{
+        display: flex;
+        gap: 2rem;
+        font-size: 15px;
+    }
+    .linha-vertical{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .linha-vertical hr{
+        height: 250px;
+        width: 2px;
+        background-color: #A625DA;
+    }
+    .cartoes-sp{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        font-size: 12px;
+    }
+    .escolher-cartao{
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+    }
+    .escolher-cartao img{
+        width: 40px;
+    }
+    .pix{
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+
+    }
+    .pix img{
+        width: 40px;
+    }
+    .boleto{
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+    }
+    .boleto img{
+        width: 35px;
+    }
+}
